@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quin Jenny (❖,❖) — Digital Card</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@700&display=swap');
+        
+        body {
+            font-family: 'Inter', system_ui, sans-serif;
+        }
+        .heading-font {
+            font-family: 'Playfair Display', sans-serif;
+        }
+        .hero-bg {
+            background: linear-gradient(135deg, #1a0033 0%, #330022 100%);
+        }
+        .card-hover {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 30px 60px -15px rgb(236 72 153 / 0.4);
+        }
+        .vibe-fill {
+            animation: vibePulse 3s infinite ease-in-out;
+        }
+        @keyframes vibePulse {
+            0%, 100% { opacity: 0.9; }
+            50% { opacity: 1; }
+        }
+    </style>
+</head>
+<body class="bg-black text-white overflow-x-hidden">
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full z-50 bg-black/90 backdrop-blur-lg border-b border-white/10">
+        <div class="max-w-5xl mx-auto px-6 py-5 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="text-3xl">❖</div>
+                <span class="font-semibold text-2xl tracking-tighter">Quin Jenny</span>
+            </div>
+            <div class="flex items-center gap-8 text-sm">
+                <a href="#about" class="hover:text-pink-400 transition">About</a>
+                <a href="#what-i-do" class="hover:text-pink-400 transition">What I Do</a>
+                <a href="#vibe" class="hover:text-pink-400 transition">Vibe</a>
+                <a href="https://x.com/Quin_Jennyy" target="_blank" 
+                   class="flex items-center gap-2 bg-white/10 hover:bg-pink-500/20 px-5 py-2 rounded-full transition">
+                    <i class="fa-brands fa-x-twitter"></i>
+                    @Quin_Jennyy
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero-bg min-h-screen flex items-center pt-20">
+        <div class="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-10">
+                <div class="inline-flex items-center gap-2 px-5 py-2 bg-white/10 rounded-full text-sm">
+                    <div class="w-2 h-2 bg-pink-400 rounded-full animate-pulse"></div>
+                    WEB3 EXPLORER • LIFE SAVER • DREAM GIRL
+                </div>
+
+                <h1 class="heading-font text-7xl md:text-8xl font-bold leading-none tracking-tighter">
+                    Quin Jenny<br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-pink-300 to-violet-300">(❖,❖)</span>
+                </h1>
+
+                <p class="text-2xl text-pink-100 max-w-lg">
+                    Web3 explorer by day.<br>
+                    Life saver 👩‍⚕️ by heart.<br>
+                    Dream girl forever 🩷
+                </p>
+
+                <div class="flex gap-4">
+                    <a href="#vibe" 
+                       class="bg-gradient-to-r from-pink-500 to-purple-600 px-8 py-4 rounded-3xl font-medium flex items-center gap-3 hover:scale-105 transition">
+                        <i class="fa-solid fa-heart-pulse"></i>
+                        Feel my vibe
+                    </a>
+                    <a href="https://x.com/Quin_Jennyy" target="_blank"
+                       class="border border-white/30 hover:border-white px-8 py-4 rounded-3xl flex items-center gap-3 transition">
+                        <i class="fa-brands fa-x-twitter"></i>
+                        Follow me
+                    </a>
+                </div>
+            </div>
+
+            <!-- Profile Card Visual -->
+            <div class="relative flex justify-center">
+                <div class="card-hover w-80 bg-white/5 backdrop-blur-3xl border border-white/20 rounded-3xl overflow-hidden">
+                    <img src="https://pbs.twimg.com/profile_images/2009045906029428736/TPgBX0cP.jpg" 
+                         alt="Quin Jenny" 
+                         class="w-full aspect-square object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between">
+                            <div>
+                                <h2 class="text-3xl font-semibold">Quin Jenny</h2>
+                                <p class="text-pink-300">@Quin_Jennyy</p>
+                            </div>
+                            <div class="text-right">
+                                <div class="text-xs uppercase tracking-widest">Vibe</div>
+                                <div class="text-5xl font-black text-pink-400">∞</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Floating badges -->
+                <div class="absolute -top-4 -right-6 bg-black/80 backdrop-blur-xl border border-pink-400/30 text-4xl px-5 py-3 rounded-3xl rotate-12 shadow-2xl">
+                    👩‍⚕️
+                </div>
+                <div class="absolute -bottom-6 -left-6 bg-black/80 backdrop-blur-xl border border-violet-400/30 text-4xl px-5 py-3 rounded-3xl -rotate-12 shadow-2xl">
+                    🌐
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="py-24 bg-zinc-950">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="grid md:grid-cols-12 gap-16">
+                <div class="md:col-span-5">
+                    <span class="text-pink-400 text-sm font-medium">01 — WHO AM I</span>
+                    <h2 class="heading-font text-6xl font-bold mt-4">About Me</h2>
+                </div>
+                <div class="md:col-span-7 text-lg text-zinc-300 leading-relaxed">
+                    <p class="mb-6">
+                        I'm Quin Jenny — a passionate Web3 explorer navigating the decentralized world.
+                    </p>
+                    <p>
+                        By heart, I'm a life saver 👩‍⚕️🩺, dedicated to caring for others. 
+                        I balance the fast-moving crypto space with compassion and good energy.
+                    </p>
+                    <p class="mt-6">
+                        Currently deep in testing projects like <span class="text-pink-400">@UnitFlowFinance</span>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What I Do -->
+    <section id="what-i-do" class="py-24 bg-black">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="grid md:grid-cols-12 gap-16">
+                <div class="md:col-span-5">
+                    <span class="text-violet-400 text-sm font-medium">02 — WHAT I DO</span>
+                    <h2 class="heading-font text-6xl font-bold mt-4">My Worlds</h2>
+                </div>
+                <div class="md:col-span-7 grid md:grid-cols-2 gap-8">
+                    <div class="bg-zinc-900/50 border border-white/10 rounded-3xl p-8 card-hover">
+                        <div class="text-6xl mb-6">🌐</div>
+                        <h3 class="text-2xl font-semibold mb-3">Web3 Explorer</h3>
+                        <p class="text-zinc-400">
+                            Diving into blockchain, DeFi, and new protocols. Day 5+ of testing @UnitFlowFinance and more.
+                        </p>
+                    </div>
+                    <div class="bg-zinc-900/50 border border-white/10 rounded-3xl p-8 card-hover">
+                        <div class="text-6xl mb-6">👩‍⚕️</div>
+                        <h3 class="text-2xl font-semibold mb-3">Life Saver</h3>
+                        <p class="text-zinc-400">
+                            Healthcare professional who loves helping people. Compassion is my core.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vibe Level -->
+    <section id="vibe" class="py-28 bg-gradient-to-b from-zinc-950 to-black text-center">
+        <div class="max-w-md mx-auto">
+            <span class="text-6xl block mb-4">🩷</span>
+            <h2 class="heading-font text-6xl font-bold">Vibe Level</h2>
+            <p class="text-pink-200 mt-3">Always maxed out</p>
+
+            <div class="mt-16 bg-white/5 border border-white/10 rounded-3xl p-10">
+                <div class="h-3 bg-gradient-to-r from-pink-400 via-purple-400 to-violet-400 rounded-full mb-8 overflow-hidden">
+                    <div class="vibe-fill h-full w-[100%] bg-white/30"></div>
+                </div>
+                <div class="text-8xl font-black text-transparent bg-clip-text bg-gradient-to-r from-pink-300 to-violet-300">
+                    ∞
+                </div>
+                <p class="mt-6 text-zinc-400">
+                    Powered by Web3, care, and endless dream girl energy 🩷
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 border-t border-white/10 text-center text-sm text-zinc-400">
+        Made with ❤️ by Quin Jenny herself • 2026
+    </footer>
+
+    <script>
+        console.log("%c✅ Quin Jenny's personal card loaded successfully", "color:#ec4899; font-weight:bold");
+    </script>
+</body>
+</html>
